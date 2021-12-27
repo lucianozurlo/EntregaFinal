@@ -162,9 +162,11 @@ h3 {
 
 .header .navigation > ul > li.current > a {
   color: #fff;
-  opacity: 1; }
+  opacity: 1;
+  border-bottom: 1px solid #fff; }
   .header .navigation > ul > li.current > a:hover {
-    border-color: #fff; }
+    border-color: #199ff2;
+    color: #199ff2; }
 
 .header .navigation .navigation-show.nav-icon {
   font-size: 3rem; }
