@@ -1,3 +1,4 @@
+/* -- Header -- */
 .header .header-inner {
 	height: 8rem;
 	background: rgba(0,77,135,.8);;
@@ -9,7 +10,6 @@
     width: 20rem;
 	height: 8rem;
     a {
-        display: block !important;
         position: absolute;
         top: 0;
     }
@@ -25,6 +25,7 @@
             padding-left: 0;
             padding-right: 0;
             color: #fff;
+            font-size: 1.2rem;
             opacity: .5;
             border-bottom: 1px solid transparent;
             text-transform: uppercase;

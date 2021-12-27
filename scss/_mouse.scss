@@ -1,45 +1,47 @@
-a#mouse {
-	display: block;
-	font-size: 1rem;
-	margin: 0 1.5rem;
-    padding: 30px 10px 10px 40px;
-    color: #fff;
-	opacity: .5;
-	border-bottom: 1px solid transparent;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-	&:hover#mouse {
-		color: #fff;
-		opacity: 1;
-	}
-	&::before {
-		display: block;
-		position: absolute;
-		top: 91vh;
-		left: calc(50vw - 12px);
+/* -- Mouse -- */
+a {
+	&#mouse {
+		display: flex;
+		justify-content: center;
 		width: 24px;
 		height: 40px;
-		border: 2px solid rgba(255,255,255,1);
-		border-radius: 12px;
-		content:"";
-		box-sizing: border-box;
+		margin: 0 auto;
+		&::before {
+			display: block;
+			position: absolute;
+			width: 24px;
+			height: 40px;
+			border: 2px solid rgba(255,255,255,1);
+			border-radius: 12px;
+			content:"";
+			box-sizing: border-box;
+			transition: .2s;
+		}
+		&::after {
+			display: block;
+			position: absolute;
+			margin-top: 10px;
+			width: 2px;
+			height: 8px;
+			background: rgba(255,255,255,1);
+			border-radius: 1px;
+			content:"";
+			animation-name: scroll;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-delay: 2s;
+			box-sizing: border-box;
+			transition: .2s;
+		}
 	}
-	&::after {
-		display: block;
-		position: absolute;
-		top: calc(91vh + 10px);
-		left: calc(50vw - 1px);
-		width: 2px;
-		height: 8px;
-		background: rgba(255,255,255,1);
-		border-radius: 1px;
-		content:"";
-		animation-name: scroll;
-		animation-duration: 2s;
-		animation-iteration-count: infinite;
-		animation-delay: 2s;
-		box-sizing: border-box;
+	&:hover#mouse {
+		&::before {
+			border-color: rgba(255,255,255,.5);
+		}
+		&::after {
+			background: rgba(255,255,255,.5);
+			border-color: rgba(255,255,255,.5);
+		}
 	}
 }
 @keyframes scroll {

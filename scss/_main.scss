@@ -1,3 +1,4 @@
+/* -- Main -- */
 body {
 	font-family: 'Rubik', sans-serif;
 	letter-spacing: 0;
@@ -6,6 +7,11 @@ body {
 	line-height: 1.8;
 	color: $colorMainBlue;
 	background: $colorMainDarkblue;
+}
+.row .row {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 a {
     &:hover.button.bkg-hover-lightblue {
@@ -50,4 +56,9 @@ h3 {
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 600;
+}
+@media only screen and (max-width: 768px){
+    .section-block {
+        padding-top: 7rem;
+    }
 }
