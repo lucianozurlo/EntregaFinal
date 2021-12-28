@@ -1,0 +1,7 @@
+@mixin flex-center($alit, $juscon, $alcon) {
+	display:flex;
+	align-items: $alit;
+    justify-content: $juscon;
+    align-content: $alcon;
+}
+ 

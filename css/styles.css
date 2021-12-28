@@ -157,13 +157,11 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.1rem; }
   .header .navigation > ul > li > a:hover {
-    color: #fff;
     opacity: 1; }
 
 .header .navigation > ul > li.current > a {
-  color: #fff;
   opacity: 1;
-  border-bottom: 1px solid #fff; }
+  border-color: #fff; }
   .header .navigation > ul > li.current > a:hover {
     border-color: #199ff2;
     color: #199ff2; }
@@ -175,8 +173,7 @@ h3 {
   .header,
   .header .header-inner {
     height: unset !important; }
-  .header
-.navigation .nav-icon {
+  .header .navigation .nav-icon {
     color: #fff;
     opacity: .5; }
   .header .navigation .nav-icon:hover {
@@ -185,11 +182,14 @@ h3 {
 /* -- Mouse -- */
 a#mouse {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
+  align-content: center;
   width: 24px;
   height: 40px;
-  margin: 0 auto; }
-  a#mouse::before {
+  margin: 0 auto;
+  border-radius: 12px; }
+  a#mouse::before, a#mouse::after {
     display: block;
     position: absolute;
     width: 24px;
@@ -200,22 +200,18 @@ a#mouse {
     box-sizing: border-box;
     transition: .2s; }
   a#mouse::after {
-    display: block;
-    position: absolute;
     margin-top: 10px;
     width: 2px;
     height: 8px;
+    border: 2px solid white;
     background: white;
-    border-radius: 1px;
-    content: "";
     animation-name: scroll;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
-    box-sizing: border-box;
-    transition: .2s; }
+    box-sizing: border-box; }
 
-a:hover#mouse::before {
+a:hover#mouse::before, a#mouse:hover::after {
   border-color: rgba(255, 255, 255, 0.5); }
 
 a:hover#mouse::after {

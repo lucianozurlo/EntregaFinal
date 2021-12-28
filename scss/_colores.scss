@@ -1,35 +1,46 @@
 /* -- Colores -- */
+$colores: (
+    mainBlue: $colorMainBlue,
+    mainDarkblue: $colorMainDarkblue,
+    blue: $colorBlue,
+    lightblue: $colorLightblue,
+    ultralightblue: $colorUltralightblue,
+    darkblue: $colorDarkblue,
+    light: $colorLight,
+    ultralight: $colorUltralight
+    );
+
 .bkg-light {
-    background-color: $colorUltralight;
-    border-color: $colorUltralight;
+    background-color: map-get($colores, ultralight);
+    border-color: map-get($colores, ultralight);
 }
 .bkg-blue {
-    background-color: $colorBlue;
-    border-color: $colorBlue;
+    background-color: map-get($colores, blue);
+    border-color: map-get($colores, blue);
 }
 .bkg-lightblue {
-    background-color: $colorUltralightblue;
-    border-color: $colorUltralightblue;
+    background-color: map-get($colores, ultralightblue);
+    border-color: map-get($colores, ultralightblue);
 }
 .bkg-darkblue {
-    background-color: $colorDarkblue;
-    border-color: $colorDarkblue;
+    background-color: map-get($colores, darkblue);
+    border-color: map-get($colores, darkblue);
 }
 .border-blue {
-    border-color: $colorBlue;
+    border-color: map-get($colores, blue);
 }
 .border-lightblue {
-    border-color: $colorUltralightblue;
+    border-color: map-get($colores, ultralightblue);
 }
 .border-darkblue {
-    border-color: $colorDarkblue;
+    border-color: map-get($colores, darkblue);
 }
 .color-blue {
-	color: $colorBlue;
+    color: map-get($colores, blue);
 }
 .color-lightblue {
-	color: $colorUltralightblue;
+    color: map-get($colores, ultralightblue);
 }
 .color-darkblue {
-	color: $colorDarkblue;
+    color: map-get($colores, darkblue);
 }

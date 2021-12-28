@@ -32,14 +32,12 @@
             font-weight: 600;
             letter-spacing: 0.1rem;
             &:hover {
-                color: #fff;
                 opacity: 1;
             }
         }
         &.current > a {
-            color: #fff;
             opacity: 1;
-            border-bottom: 1px solid #fff;
+            border-color: #fff;
             &:hover {
                 border-color: $colorUltralightblue;
                 color: $colorUltralightblue;

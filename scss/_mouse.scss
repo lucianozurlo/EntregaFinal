@@ -1,11 +1,11 @@
 /* -- Mouse -- */
 a {
 	&#mouse {
-		display: flex;
-		justify-content: center;
+		@include flex-center(flex-start, center, center);
 		width: 24px;
 		height: 40px;
 		margin: 0 auto;
+		border-radius: 12px;
 		&::before {
 			display: block;
 			position: absolute;
@@ -18,20 +18,17 @@ a {
 			transition: .2s;
 		}
 		&::after {
-			display: block;
-			position: absolute;
+			@extend a#mouse::before;
 			margin-top: 10px;
 			width: 2px;
 			height: 8px;
+			border: 2px solid rgba(255,255,255,1);
 			background: rgba(255,255,255,1);
-			border-radius: 1px;
-			content:"";
 			animation-name: scroll;
 			animation-duration: 2s;
 			animation-iteration-count: infinite;
 			animation-delay: 2s;
 			box-sizing: border-box;
-			transition: .2s;
 		}
 	}
 	&:hover#mouse {
