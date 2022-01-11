@@ -262,6 +262,7 @@ a:hover#mouse::after {
     font-size: 70px;
     font-weight: 700;
     line-height: 1;
+    text-transform: none;
     color: #199ff2;
     text-shadow: 2px 2px 1px #173a58; }
   #home p {
