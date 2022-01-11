@@ -29,10 +29,14 @@ a:hover.bkg-hover-darkblue {
   background-color: #173a58;
   border-color: #173a58; }
 
-h2 {
+h1 {
   font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase; }
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700; }
 
 h3 {
   font-size: 3rem;
