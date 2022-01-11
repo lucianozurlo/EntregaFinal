@@ -1,5 +1,5 @@
 {
-  "name": "desafiosass2-seo",
+  "name": "entrega",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucianozurlo/desafioSASS2-SEO.git"
+    "url": "git+https://github.com/lucianozurlo/entrega.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucianozurlo/desafioSASS/issues"
+    "url": "https://github.com/lucianozurlo/entrega/issues"
   },
-  "homepage": "https://github.com/lucianozurlo/desafioSASS#readme",
+  "homepage": "https://github.com/lucianozurlo/entrega#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
